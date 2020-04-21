@@ -4,6 +4,7 @@ namespace WebApplication1.Dto
 {
     public class Street
     {
-        private List<House> houses;
+        private int id{ get; set; }
+        private List<House> houses{ get; set; }
     }
 }

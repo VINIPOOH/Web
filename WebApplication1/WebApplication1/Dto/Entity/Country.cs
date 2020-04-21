@@ -4,6 +4,7 @@ namespace WebApplication1.Dto
 {
     public class Country
     {
-        private List<City> cities;
+        private int id{ get; set; }
+        private List<City> cities{ get; set; }
     }
 }

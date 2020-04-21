@@ -4,6 +4,7 @@ namespace WebApplication1.Dto
 {
     public class User
     {
-        private List<Apartment> apartments;
+        private int id { get; set; }
+        private List<Apartment> apartments{ get; set; }
     }
 }

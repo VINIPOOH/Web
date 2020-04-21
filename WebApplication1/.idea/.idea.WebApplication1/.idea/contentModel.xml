@@ -14,14 +14,19 @@
           <e p="IvanController.cs" t="Include" />
           <e p="MyController.cs" t="Include" />
         </e>
-        <e p="dal" t="Include" />
+        <e p="dal" t="Include">
+          <e p="IRepository.cs" t="Include" />
+          <e p="MyDbContext.cs" t="Include" />
+        </e>
         <e p="Dto" t="Include">
-          <e p="Apartment.cs" t="Include" />
-          <e p="City.cs" t="Include" />
-          <e p="Country.cs" t="Include" />
-          <e p="House.cs" t="Include" />
-          <e p="Street.cs" t="Include" />
-          <e p="User.cs" t="Include" />
+          <e p="Entity" t="Include">
+            <e p="Apartment.cs" t="Include" />
+            <e p="City.cs" t="Include" />
+            <e p="Country.cs" t="Include" />
+            <e p="House.cs" t="Include" />
+            <e p="Street.cs" t="Include" />
+            <e p="User.cs" t="Include" />
+          </e>
         </e>
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />

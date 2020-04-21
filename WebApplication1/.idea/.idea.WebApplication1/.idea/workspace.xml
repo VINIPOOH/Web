@@ -21,17 +21,20 @@
     <setting file="file://$PROJECT_DIR$/WebApplication1/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Controllers/IvanController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A76AC4F3-7222-4DA6-B0CA-CCACDB728DC8/8c/f898de08/FromQueryAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/Entity/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6D5BACBD-2C6F-4653-8501-54690F8ED19F/43/94014707/Controller.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/Apartment.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/House.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/Street.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/City.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/Country.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/Entity/Apartment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/Entity/House.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/Entity/Street.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/Entity/City.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Dto/Entity/Country.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Controllers/MyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/320AE9F5-4778-4C83-B457-9738AA85B248/2b/785959d9/RazorPage`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Views/Ivan/IvanHeloWorld.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Dal/MyDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Views/Ivan/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Dal/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Views/Shared/Error.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -53,6 +56,18 @@
         <option value="$PROJECT_DIR$/WebApplication1/Dto/House.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/Dto/User.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/Dto/Apartment.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/AbstractEntyty.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/AbstractEntity.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dal/MyDbContext.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/Roles.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/ApartmentsAndUsers.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/User.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/Street.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/House.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/Country.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/City.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/Apartment.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dal/IRepository.cs" />
       </list>
     </option>
   </component>
@@ -118,7 +133,7 @@
       <updated>1583052126277</updated>
       <workItem from="1583052132928" duration="11221000" />
       <workItem from="1583333561250" duration="1172000" />
-      <workItem from="1587469158284" duration="902000" />
+      <workItem from="1587469158284" duration="4799000" />
     </task>
     <servers />
   </component>
