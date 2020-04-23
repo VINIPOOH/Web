@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="113515aa-4983-4f90-a43d-f296f49e6c3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../DAL/DAL/GenericRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DAL/DAL/IGenericRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DAL/DAL/IUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DAL/DAL/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/DAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/Entity/Apartment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/Entity/Apartment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/Entity/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/Entity/City.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/Entity/Country.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/Entity/House.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/Entity/House.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/Entity/Street.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/Entity/Street.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/Entity/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/Entity/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/Entity/UserApartment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/Entity/UserApartment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/IRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/MyDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/MyDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/bin/Debug/netcoreapp3.1/DAL.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/bin/Debug/netcoreapp3.1/DAL.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/obj/DAL.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/obj/DAL.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/obj/DAL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/obj/DAL.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/obj/DAL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/obj/DAL.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/obj/Debug/netcoreapp3.1/DAL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/obj/Debug/netcoreapp3.1/DAL.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/obj/Debug/netcoreapp3.1/DAL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/obj/Debug/netcoreapp3.1/DAL.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAL/DAL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DAL/DAL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/WebApplication1/DesignTimeBuild/.dtbcache" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/WebApplication1/DesignTimeBuild/.dtbcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/WebApplication1/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/WebApplication1/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/WebApplication1/v16/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/WebApplication1/v16/Server/sqlite3/storage.ide" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/320AE9F5-4778-4C83-B457-9738AA85B248/3d/72231e61/RazorPageBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/Shared/Error.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/Ivan/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/Ivan/IvanHeloWorld.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/Home/Privacy.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/My/GetHelloWordWithString.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/My/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A76AC4F3-7222-4DA6-B0CA-CCACDB728DC8/8c/f898de08/FromQueryAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/Entity/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/Entity/Street.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/Entity/House.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Controllers/MyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Controllers/IvanController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/Entity/City.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6D5BACBD-2C6F-4653-8501-54690F8ED19F/43/94014707/Controller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/Entity/Apartment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/Entity/UserApartment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/320AE9F5-4778-4C83-B457-9738AA85B248/2b/785959d9/RazorPage`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/MyDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DAL/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/GenericRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/UnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/IGenericRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../DAL/DAL/IUnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/Ivan/Index.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Views/Ivan.cshtml.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Views/Ivan/Index.cshtml.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Views/Ivan/IvanHeloWorld.cshtml.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Views/Ivan/Index.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Controllers/IvanController.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Views/Ivan/IvanHeloWorld.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/City.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Country.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Street.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/House.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/User.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Apartment.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/AbstractEntyty.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/AbstractEntity.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dal/MyDbContext.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/Roles.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/ApartmentsAndUsers.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/User.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/Street.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/House.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/Country.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/City.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dto/Entity/Apartment.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Dal/IRepository.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/Class1.cs" />
+        <option value="$PROJECT_DIR$/../DAL/BLL/BLL.csproj" />
+        <option value="$PROJECT_DIR$/DAL/Startup.cs" />
+        <option value="$PROJECT_DIR$/../DAL/BLL/Entity/UserApartment.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/Entity/Country.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/Entity/City.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/Entity/Street.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/Entity/House.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/MyDbContext.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/Entity/UserApartment.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/Entity/User.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/Entity/Apartment.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/GenericRepository.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/IUnitOfWork.cs" />
+        <option value="$PROJECT_DIR$/../DAL/DAL/UnitOfWork.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YWIrglxZ5bip0gU7MOh6X7MOL0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1">
+    <configuration name="WebApplication1" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="WebApplication1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication1: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="113515aa-4983-4f90-a43d-f296f49e6c3c" name="Default Changelist" comment="" />
+      <created>1583052126277</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583052126277</updated>
+      <workItem from="1583052132928" duration="11221000" />
+      <workItem from="1583333561250" duration="1172000" />
+      <workItem from="1587469158284" duration="4799000" />
+      <workItem from="1587635012215" duration="5976000" />
+    </task>
+    <task id="LOCAL-00001" summary="DAL">
+      <created>1587635819185</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587635819185</updated>
+    </task>
+    <task id="LOCAL-00002" summary="DALl">
+      <created>1587635890317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587635890317</updated>
+    </task>
+    <task id="LOCAL-00003" summary="DALl">
+      <created>1587635891558</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587635891558</updated>
+    </task>
+    <task id="LOCAL-00004" summary="DALl">
+      <created>1587635896834</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587635896835</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="DAL" />
+    <MESSAGE value="DALl" />
+    <option name="LAST_COMMIT_MESSAGE" value="DALl" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
