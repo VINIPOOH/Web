@@ -1,0 +1,11 @@
+B:\Projects\GitHub\Web\WebApplication1\BLL\obj\Debug\netcoreapp3.1\BLL.csprojAssemblyReference.cache
+B:\Projects\GitHub\Web\WebApplication1\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+B:\Projects\GitHub\Web\WebApplication1\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+B:\Projects\GitHub\Web\WebApplication1\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+B:\Projects\GitHub\Web\WebApplication1\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+B:\Projects\GitHub\Web\WebApplication1\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+B:\Projects\GitHub\Web\WebApplication1\BLL\bin\Debug\netcoreapp3.1\DAL.dll
+B:\Projects\GitHub\Web\WebApplication1\BLL\bin\Debug\netcoreapp3.1\DAL.pdb
+B:\Projects\GitHub\Web\WebApplication1\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
+B:\Projects\GitHub\Web\WebApplication1\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+B:\Projects\GitHub\Web\WebApplication1\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
