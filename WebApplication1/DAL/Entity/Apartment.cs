@@ -8,6 +8,9 @@ namespace WebApplication1.Dto
         public int ApartmentId { get; set; }
         [Required] public int ApartmentNumber { get; set; }
         [Required] public int ApartmentSpace { get; set; }
+        
+        public int HouseId{ get; set; }
+        public virtual House House{ get; set; }
         public List<UserApartment> UserApartments { get; set; }
     }
 }

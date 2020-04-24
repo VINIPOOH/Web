@@ -13,7 +13,7 @@ namespace WebApplication1.Dto
         public int Id { get; set; }
         [Required] public string Name { get; set; }
         public ICollection<House> Houses { get; set; }
-        public int ApartmentId { get; set; }
+        public int CityId { get; set; }
         public virtual City City { get; set; }
     }
 }

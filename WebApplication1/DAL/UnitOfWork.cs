@@ -7,6 +7,13 @@ using System;
 {
     public class UnitOfWork : IUnitOfWork
     {
+        private readonly MyDbContext context;
+        public GenericRepository<Apartment> apartments;
+        public GenericRepository<City> cites;
+        public GenericRepository<House> houses;
+        public GenericRepository<Street> streets;
+        public GenericRepository<User> users;
+        private bool disposed = false;
 
         public UnitOfWork()
         {
@@ -19,8 +26,7 @@ using System;
             GC.SuppressFinalize(this);
         }
 
-        private bool disposed = false;
-
+        
         protected virtual void Dispose(bool disposing)
         {
             if (!disposed)
@@ -34,12 +40,7 @@ using System;
             disposed = true;
         }
 
-        private readonly MyDbContext context;
-        public GenericRepository<Apartment> apartments;
-        public GenericRepository<City> cites;
-        public GenericRepository<House> houses;
-        public GenericRepository<Street> streets;
-        public GenericRepository<User> users;
+        
 
         public void Save()
         {
