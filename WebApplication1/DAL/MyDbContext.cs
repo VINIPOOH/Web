@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using WebApplication1.Dto;
+using DAL.Entity;
 
 namespace WebApplication1.Dal
 {

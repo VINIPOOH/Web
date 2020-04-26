@@ -1,5 +1,4 @@
 ﻿﻿using System.Linq;
-using WebApplication1.Dto;
 
 namespace WebApplication1.Dal
 {

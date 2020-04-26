@@ -2,9 +2,60 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="B:\Projects\GitHub\web\WebApplication1" t="IncludeFlat">
+      <e p="API" t="IncludeRecursive">
+        <e p="API.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="ApartmensController.cs" t="Include" />
+          <e p="CitiesController.cs" t="Include" />
+          <e p="HousesController.cs" t="Include" />
+          <e p="StreetsController.cs" t="Include" />
+          <e p="UserController.cs" t="Include" />
+        </e>
+        <e p="mapers" t="Include">
+          <e p="ModelDtoMaper.cs" t="Include" />
+        </e>
+        <e p="model" t="Include">
+          <e p="ApartmentModel.cs" t="Include" />
+          <e p="CityModel.cs" t="Include" />
+          <e p="HouseModel.cs" t="Include" />
+          <e p="StreetModel.cs" t="Include" />
+          <e p="UserModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="API.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
       <e p="BLL" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="BLL.csproj" t="IncludeRecursive" />
+        <e p="dto" t="Include">
+          <e p="ApartmentDto.cs" t="Include" />
+          <e p="CityDto.cs" t="Include" />
+          <e p="HouseDto.cs" t="Include" />
+          <e p="StreetDto.cs" t="Include" />
+          <e p="UserDto.cs" t="Include" />
+        </e>
+        <e p="Intarfaces" t="Include">
+          <e p="IGenericService.cs" t="Include" />
+          <e p="IMapper.cs" t="Include" />
+        </e>
+        <e p="mapers" t="Include">
+          <e p="EntityDtoMaper.cs" t="Include" />
+          <e p="UserCastomMaper.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -13,25 +64,9 @@
           </e>
         </e>
         <e p="Servise" t="Include">
-          <e p="ApartmentServise.cs" t="Include" />
-          <e p="CityServise.cs" t="Include" />
           <e p="GenericServise.cs" t="Include" />
-          <e p="HouseServise.cs" t="Include" />
-          <e p="StreetServise.cs" t="Include" />
           <e p="UserServise.cs" t="Include" />
         </e>
-      </e>
-      <e p="ConsoleApp1" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="ConsoleApp1.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="ConsoleApp1.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Program.cs" t="Include" />
       </e>
       <e p="dal" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -66,14 +101,12 @@
         <e p="UnitOfWork.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
-      <e p="WebApplication1" t="IncludeRecursive">
+      <e p="web" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="HomeController.cs" t="Include" />
-          <e p="IvanController.cs" t="Include" />
-          <e p="MyController.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
@@ -81,7 +114,7 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="WebApplication1.AssemblyInfo.cs" t="Include" />
+              <e p="WEB.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -97,21 +130,13 @@
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
           </e>
-          <e p="Ivan" t="Include">
-            <e p="Index.cshtml" t="Include" />
-            <e p="IvanHeloWorld.cshtml" t="Include" />
-          </e>
-          <e p="My" t="Include">
-            <e p="GetHelloWordWithString.cshtml" t="Include" />
-            <e p="Index.cshtml" t="Include" />
-          </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />
             <e p="Error.cshtml" t="Include" />
           </e>
         </e>
-        <e p="WebApplication1.csproj" t="IncludeRecursive" />
+        <e p="WEB.csproj" t="IncludeRecursive" />
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
             <e p="site.css" t="Include" />
@@ -178,6 +203,6 @@
       <e p="WebApplication1.sln" t="IncludeFlat" />
     </e>
     <e p="C:\Users\Vinipooh\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Vinipooh\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_WebApplication1.1782050949.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Vinipooh\.Rider2019.2\system\resharper-host\temp\ReSharper.Db.2020-04-26_13-17-00.170" t="ExcludeRecursive" />
   </component>
 </project>

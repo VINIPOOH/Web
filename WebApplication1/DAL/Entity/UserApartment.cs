@@ -1,6 +1,6 @@
 ﻿﻿using System.Collections.Generic;
 
-namespace WebApplication1.Dto
+namespace DAL.Entity
 {
     public class UserApartment
     {

@@ -1,7 +1,7 @@
 ﻿﻿using ComputerNet.DAL.Interfaces;
+using DAL.Entity;
 using System;
  using WebApplication1.Dal;
- using WebApplication1.Dto;
 
  namespace ComputerNet.DAL.Repositories
 {
@@ -36,10 +36,8 @@ using System;
                     context.Dispose();
                 }
             }
-
             disposed = true;
         }
-
         
 
         public void Save()
@@ -78,7 +76,7 @@ using System;
         }
 
         public GenericRepository<Apartment> Apartments =>
-            apartments ?? (apartments = new GenericRepository<Apartment>(context));
+            apartments ??(apartments = new GenericRepository<Apartment>(context));
 
         public GenericRepository<City> Cites =>
             cites ?? (cites = new GenericRepository<City>(context));

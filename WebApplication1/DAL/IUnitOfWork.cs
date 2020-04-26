@@ -1,6 +1,6 @@
 ﻿﻿using ComputerNet.DAL.Repositories;
+using DAL.Entity;
 using System;
- using WebApplication1.Dto;
 
  namespace ComputerNet.DAL.Interfaces
 {

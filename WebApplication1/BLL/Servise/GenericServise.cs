@@ -1,30 +1,76 @@
-﻿using System.Collections.Generic;
-using ComputerNet.DAL.Repositories;
-using WebApplication1.Dto;
+﻿using AutoMapper;
+using BLL.Intarfaces;
+using ComputerNet.DAL.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace BLL.Servise
 {
-    public class GenericServise<Entity> where Entity : class
+    public class GenericService<TEntity, TEntityDTO> : IGenericService<TEntityDTO>
+        where TEntity : class
+        where TEntityDTO : class
     {
-        protected UnitOfWork UnitOfWork;
+        protected readonly IMapper mp;
+        protected readonly IUnitOfWork _db;
+        protected readonly IGenericRepository<TEntity> _repo;
 
-        IEnumerable<Entity> GetAll()
+        public GenericService(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            return UnitOfWork.Set<Entity>().Get();
-        }
-        void Create(Entity entity)
-        {
-            UnitOfWork.Set<Entity>().Create(entity);
-        }
-
-        void Delete(Entity entity)
-        {
-            UnitOfWork.Set<Entity>().Delete(entity);
+            _db = unitOfWork;
+            mp = mapper;
+            _repo = unitOfWork.Set<TEntity>();
         }
 
-        void Update(Entity entity)
+        public virtual void Create(TEntityDTO itemDTO)
         {
-            UnitOfWork.Set<Entity>().Update(entity);
+            if (itemDTO == null)
+            {
+                return;
+            }
+
+            TEntity item = mp.Map<TEntity>(itemDTO);
+
+            _repo.Create(item);
+            _db.Save();
+        }
+
+        public virtual void Delete(int id)
+        {
+            _repo.Delete(id);
+            _db.Save();
+        }
+
+        public virtual IEnumerable<TEntityDTO> GetAll()
+        {
+            IEnumerable<TEntity> items = _repo.Get();
+
+            return mp.Map<IEnumerable<TEntityDTO>>(items);
+        }
+
+        public virtual TEntityDTO GetById(int id)
+        {
+            TEntity item = _repo.GetById(id);
+
+            return mp.Map<TEntityDTO>(item);
+        }
+
+        public virtual void Update(TEntityDTO itemToUpdateDTO)
+        {
+            if (itemToUpdateDTO == null)
+            {
+                return;
+            }
+
+            TEntity itemToUpdate = mp.Map<TEntity>(itemToUpdateDTO);
+
+            _repo.Update(itemToUpdate);
+            _db.Save();
+        }
+
+        public void Dispose()
+        {
+            _db.Dispose();
         }
     }
 }

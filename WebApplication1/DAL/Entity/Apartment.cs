@@ -1,10 +1,15 @@
 ﻿﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace WebApplication1.Dto
+namespace DAL.Entity
 {
     public class Apartment
     {
+        public Apartment()
+        {
+            UserApartments = new List<UserApartment>();
+        }
+
         public int ApartmentId { get; set; }
         [Required] public int ApartmentNumber { get; set; }
         [Required] public int ApartmentSpace { get; set; }
