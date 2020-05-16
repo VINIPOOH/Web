@@ -18,7 +18,14 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "B:\\Projects\\GitHub\\Web\\WebApplication1\\BLL\\BLL.csproj": {
+            "projectPath": "B:\\Projects\\GitHub\\Web\\WebApplication1\\BLL\\BLL.csproj"
+          },
+          "B:\\Projects\\GitHub\\Web\\WebApplication1\\DAL\\DAL.csproj": {
+            "projectPath": "B:\\Projects\\GitHub\\Web\\WebApplication1\\DAL\\DAL.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -29,6 +36,26 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.4, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.4, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[3.1.4, )"
+        },
+        "Pomelo.EntityFrameworkCore.MySql": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

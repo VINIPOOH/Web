@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using DAL.Entity;
+ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-namespace WebApplication1.Dal
+ namespace WebApplication1.Dal
 {
-    public class MyDbContext : DbContext
+    public class MyDbContext : IdentityDbContext
     {
         public DbSet<Apartment> Apartments { get; set; }
         public DbSet<City> Cities { get; set; }
@@ -25,17 +26,5 @@ namespace WebApplication1.Dal
             base.OnConfiguring(optionsBuilder);
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-//            modelBuilder.Entity<City>().HasMany<Street>();
-//            modelBuilder.Entity<Street>().HasMany<House>();
-//            modelBuilder.Entity<House>().HasMany<Apartment>();
-//
-//
-//
-//
-//            modelBuilder.Entity<User>().HasMany<UserApartment>();
-//            modelBuilder.Entity<Apartment>().HasMany<UserApartment>();
-        }
     }
 }
