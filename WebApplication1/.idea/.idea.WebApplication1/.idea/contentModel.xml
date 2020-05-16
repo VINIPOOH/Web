@@ -104,6 +104,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
+          <e p="CityController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
         </e>
         <e p="mapers" t="Include">
@@ -112,6 +113,7 @@
         <e p="Models" t="Include">
           <e p="ApartmentModel.cs" t="Include" />
           <e p="CityModel.cs" t="Include" />
+          <e p="CityPageModel.cs" t="Include" />
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="HouseModel.cs" t="Include" />
           <e p="LoginViewModel.cs" t="Include" />
@@ -138,6 +140,9 @@
             <e p="Login.cshtml" t="Include" />
             <e p="Register.cshtml" t="Include" />
             <e p="RegistrationConfirmation.cshtml" t="Include" />
+          </e>
+          <e p="City" t="Include">
+            <e p="City.cshtml" t="Include" />
           </e>
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />

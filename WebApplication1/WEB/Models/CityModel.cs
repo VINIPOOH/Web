@@ -1,22 +1,20 @@
 ﻿﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace BLL.dto
+namespace WEB.Models
 {
-    public class CityDto
+    public class CityModel
     {
-
-
-        public CityDto(string name)
+        public CityModel(string name)
         {
             Name = name;
         }
 
-        public CityDto()
+        public CityModel()
         {
         }
 
-        public CityDto(int id, string name, ICollection<StreetDto> streets)
+        public CityModel(int id, string name, ICollection<StreetModel> streets)
         {
             Id = id;
             Name = name;
@@ -24,10 +22,5 @@ namespace BLL.dto
 
         public int Id { get; set; }
         [Required] public string Name { get; set; }
-
-        public override string ToString()
-        {
-            return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}";
-        }
     }
 }
