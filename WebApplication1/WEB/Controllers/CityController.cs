@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using BLL.dto;
 using BLL.Intarfaces;
+using DAL.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using WEB.Models;
@@ -15,10 +17,10 @@ namespace WEB.Controllers
     public class CityController : Controller
     {
         
-        private readonly IGenericService<CityDto> service;
+        private readonly IGenericService<CityDto, City> service;
         private readonly IMapper mapper;
 
-        public CityController(IMapper mapper, IGenericService<CityDto> service)
+        public CityController(IMapper mapper, IGenericService<CityDto, City> service)
         {
             this.service = service;
             this.mapper = mapper;
@@ -34,15 +36,24 @@ namespace WEB.Controllers
         [HttpPost]
         public async Task<IActionResult> City(CityPageModel model )
         {
-            IEnumerable<CityDto> cityDtos = service.GetAll();
-            foreach (var city in service.GetAll())
+            string toReturn = "";
+            IEnumerable < CityDto > result = null;
+            if (model.SityName!=null)
             {
-                if (city.Name.Equals(model.SityName))
-                {
-                    ViewData["CityWhichUserLooking"] = city.ToString();
-                    return View();
-                }
+                result= service.findAllWithFilter(city => city.Name.Equals(model.SityName));
             }
+
+            if (model.AmountLivers>=0)
+            {
+                int amountsLiversWhicIsInCity;
+                result= service.findAllWithFilter(city => city.Streets.Count==model.AmountLivers);
+            }
+
+            foreach (var cityDto in result)
+            {
+                toReturn += cityDto.ToString();
+            }
+            ViewData["CityWhichUserLooking"] = toReturn;
             return View();            
         }
     }

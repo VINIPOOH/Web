@@ -22,5 +22,10 @@ namespace BLL.dto
         public string FIO { get; set; }
         [Required]
         public DateTime BornDate { get; set; }
+
+        public override string ToString()
+        {
+            return $"{nameof(UserId)}: {UserId}, {nameof(FIO)}: {FIO}, {nameof(BornDate)}: {BornDate}";
+        }
     }
 }

@@ -106,6 +106,7 @@
           <e p="AccountController.cs" t="Include" />
           <e p="CityController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="LiversController.cs" t="Include" />
         </e>
         <e p="mapers" t="Include">
           <e p="ModelDtoMaper.cs" t="Include" />
@@ -116,6 +117,7 @@
           <e p="CityPageModel.cs" t="Include" />
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="HouseModel.cs" t="Include" />
+          <e p="LiversPageModel.cs" t="Include" />
           <e p="LoginViewModel.cs" t="Include" />
           <e p="NewUserViewModel.cs" t="Include" />
           <e p="StreetModel.cs" t="Include" />
@@ -146,6 +148,9 @@
           </e>
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Livers" t="Include">
+            <e p="Livers.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />

@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using AutoMapper;
 using BLL.dto;
 using BLL.Intarfaces;
@@ -9,7 +11,7 @@ using DAL.Entity;
 
 namespace BLL.Servise
 {
-    public class UserServise: IGenericService<UserDto>
+    public class UserServise: IGenericService<UserDto, User>
     {
         protected readonly IMapper mp;
         protected readonly IUnitOfWork _db;
@@ -89,6 +91,15 @@ namespace BLL.Servise
         {
             _repo.Delete(id);
             _db.Save();
+        }
+
+        public IEnumerable<UserDto> findAllWithFilter(
+            Expression<Func<User, bool>> filter = null,
+            Func<IQueryable<User>, IOrderedQueryable<User>> orderBy = null)
+        {
+            IEnumerable<User> items = _repo.Get(filter, orderBy);
+
+            return mp.Map<IEnumerable<UserDto>>(items);
         }
     }
 }

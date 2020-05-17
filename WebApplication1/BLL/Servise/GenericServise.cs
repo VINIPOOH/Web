@@ -3,11 +3,13 @@ using BLL.Intarfaces;
 using ComputerNet.DAL.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace BLL.Servise
 {
-    public class GenericService<TEntity, TEntityDTO> : IGenericService<TEntityDTO>
+    public class GenericService<TEntity, TEntityDTO> : IGenericService<TEntityDTO, TEntity>
         where TEntity : class
         where TEntityDTO : class
     {
@@ -71,6 +73,15 @@ namespace BLL.Servise
         public void Dispose()
         {
             _db.Dispose();
+        }
+
+        public IEnumerable<TEntityDTO> findAllWithFilter(
+            Expression<Func<TEntity, bool>> filter = null,
+            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null)
+        {
+            IEnumerable<TEntity> items = _repo.Get(filter, orderBy);
+
+            return mp.Map<IEnumerable<TEntityDTO>>(items);
         }
     }
 }
