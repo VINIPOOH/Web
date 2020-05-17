@@ -41,6 +41,7 @@ namespace WEB
             services.AddScoped<IGenericService<HouseDto, House>, GenericService<House, HouseDto>>();
             services.AddScoped<IGenericService<ApartmentDto, Apartment>, GenericService<Apartment, ApartmentDto>>();
             services.AddScoped<IGenericService<UserDto, User>, GenericService<User, UserDto>>();
+            services.AddScoped<IGenericService<UserAppartmenDto, UserApartment>, GenericService<UserApartment, UserAppartmenDto >>();
 
             services.AddDbContext<MyDbContext>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();

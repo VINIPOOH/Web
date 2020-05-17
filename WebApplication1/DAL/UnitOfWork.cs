@@ -13,6 +13,7 @@ using System;
         public GenericRepository<House> houses;
         public GenericRepository<Street> streets;
         public GenericRepository<User> users;
+        public GenericRepository<UserApartment> userApps;
         private bool disposed = false;
 
         public UnitOfWork()
@@ -71,6 +72,11 @@ using System;
             {
                 return Users as GenericRepository<T>;
             }
+            
+            if (typeof(T) == typeof(UserApartment))
+            {
+                return UserApps as GenericRepository<T>;
+            }
 
             return null;
         }
@@ -89,5 +95,8 @@ using System;
 
         public GenericRepository<User> Users => 
             users??(users=new GenericRepository<User>(context));
+        
+        public GenericRepository<UserApartment> UserApps => 
+            userApps??(userApps=new GenericRepository<UserApartment>(context));
     }
 }

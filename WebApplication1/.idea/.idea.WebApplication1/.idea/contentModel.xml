@@ -45,6 +45,7 @@
           <e p="CityDto.cs" t="Include" />
           <e p="HouseDto.cs" t="Include" />
           <e p="StreetDto.cs" t="Include" />
+          <e p="UserAppartmenDto.cs" t="Include" />
           <e p="UserDto.cs" t="Include" />
         </e>
         <e p="Intarfaces" t="Include">
@@ -106,12 +107,14 @@
           <e p="AccountController.cs" t="Include" />
           <e p="CityController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="LiversAddController.cs" t="Include" />
           <e p="LiversController.cs" t="Include" />
         </e>
         <e p="mapers" t="Include">
           <e p="ModelDtoMaper.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="AddUserToFlateModel.cs" t="Include" />
           <e p="ApartmentModel.cs" t="Include" />
           <e p="CityModel.cs" t="Include" />
           <e p="CityPageModel.cs" t="Include" />
@@ -151,6 +154,9 @@
           </e>
           <e p="Livers" t="Include">
             <e p="Livers.cshtml" t="Include" />
+          </e>
+          <e p="LiversAdd" t="Include">
+            <e p="LiversAdd.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />

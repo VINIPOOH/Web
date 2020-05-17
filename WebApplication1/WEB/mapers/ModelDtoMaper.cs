@@ -24,6 +24,7 @@ namespace WEB.mapers
             CreateMap<House, HouseDto>().ReverseMap();
             CreateMap<Apartment, ApartmentDto>().ReverseMap();
             CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<UserApartment, UserAppartmenDto>().ReverseMap();
             
             
 

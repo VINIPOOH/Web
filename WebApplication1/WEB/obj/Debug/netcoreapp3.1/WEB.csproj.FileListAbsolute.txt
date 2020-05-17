@@ -70,3 +70,4 @@ B:\Projects\GitHub\Web\WebApplication1\WEB\bin\Debug\netcoreapp3.1\BLL.pdb
 B:\Projects\GitHub\Web\WebApplication1\WEB\bin\Debug\netcoreapp3.1\DAL.pdb
 B:\Projects\GitHub\Web\WebApplication1\WEB\obj\Debug\netcoreapp3.1\Razor\Views\City\City.cshtml.g.cs
 B:\Projects\GitHub\Web\WebApplication1\WEB\obj\Debug\netcoreapp3.1\Razor\Views\Livers\Livers.cshtml.g.cs
+B:\Projects\GitHub\Web\WebApplication1\WEB\obj\Debug\netcoreapp3.1\Razor\Views\LiversAdd\LiversAdd.cshtml.g.cs

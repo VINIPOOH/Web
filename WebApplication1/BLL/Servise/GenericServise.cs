@@ -79,7 +79,17 @@ namespace BLL.Servise
             Expression<Func<TEntity, bool>> filter = null,
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null)
         {
-            IEnumerable<TEntity> items = _repo.Get(filter, orderBy);
+            IEnumerable<TEntity> items;
+            try
+            {
+                 items = _repo.Get(filter, orderBy);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            
 
             return mp.Map<IEnumerable<TEntityDTO>>(items);
         }
