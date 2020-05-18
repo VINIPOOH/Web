@@ -7,6 +7,7 @@ using AutoMapper;
 using BLL.dto;
 using BLL.Intarfaces;
 using DAL.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using WEB.Models;
@@ -14,6 +15,7 @@ using WEB.Models;
 
 namespace WEB.Controllers
 {
+    [Authorize]
     public class LiversController : Controller
     {
         

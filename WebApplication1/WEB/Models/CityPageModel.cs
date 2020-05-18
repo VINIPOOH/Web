@@ -9,6 +9,8 @@ namespace WEB.Models
     {
         public string SityName { get; set; }
         
-        public int AmountLivers { get; set; }
+        public int AmountSreets { get; set; }
+        
+        public string StreatName { get; set; }
     }
 }

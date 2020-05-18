@@ -7,6 +7,7 @@ using AutoMapper;
 using BLL.dto;
 using BLL.Intarfaces;
 using DAL.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using WEB.Models;
@@ -14,15 +15,18 @@ using WEB.Models;
 
 namespace WEB.Controllers
 {
+    [Authorize]
     public class CityController : Controller
     {
         
         private readonly IGenericService<CityDto, City> service;
+        private readonly IGenericService<StreetDto, Street> streetServise;
         private readonly IMapper mapper;
 
-        public CityController(IMapper mapper, IGenericService<CityDto, City> service)
+        public CityController(IGenericService<CityDto, City> service, IGenericService<StreetDto, Street> streetServise, IMapper mapper)
         {
             this.service = service;
+            this.streetServise = streetServise;
             this.mapper = mapper;
         }
 
@@ -41,20 +45,34 @@ namespace WEB.Controllers
             if (model.SityName!=null)
             {
                 result= service.findAllWithFilter(city => city.Name.Equals(model.SityName));
+                return ActionResult(result, toReturn);
             }
 
-            if (model.AmountLivers>=0)
+            if (model.StreatName!=null)
             {
-                int amountsLiversWhicIsInCity;
-                result= service.findAllWithFilter(city => city.Streets.Count==model.AmountLivers);
+                ViewData["CityWhichUserLooking"] = service.GetById(streetServise.findAllWithFilter(street => street.Name.Equals(model.StreatName)).First().CityId).ToString();
+
+                return View();  
             }
 
+            if (model.AmountSreets>=0)
+            {
+                result= service.findAllWithFilter(city => city.Streets.Count==model.AmountSreets);
+                return ActionResult(result, toReturn);
+            }
+
+            return ActionResult(result, toReturn);
+        }
+
+        private IActionResult ActionResult(IEnumerable<CityDto> result, string toReturn)
+        {
             foreach (var cityDto in result)
             {
                 toReturn += cityDto.ToString();
             }
+
             ViewData["CityWhichUserLooking"] = toReturn;
-            return View();            
+            return View();
         }
     }
 }
