@@ -36,11 +36,13 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<IGenericService<CityDto>, GenericService<City, CityDto>>();
-            services.AddScoped<IGenericService<StreetDto>, GenericService<Street, StreetDto>>();
-            services.AddScoped<IGenericService<HouseDto>, GenericService<House, HouseDto>>();
-            services.AddScoped<IGenericService<ApartmentDto>, GenericService<Apartment, ApartmentDto>>();
-            services.AddScoped<IGenericService<UserDto>, GenericService < User, UserDto >> ();
+            services.AddScoped<IGenericService<CityDto, City>, GenericService<City, CityDto>>();
+            services.AddScoped<IGenericService<StreetDto, Street>, GenericService<Street, StreetDto>>();
+            services.AddScoped<IGenericService<HouseDto, House>, GenericService<House, HouseDto>>();
+            services.AddScoped<IGenericService<ApartmentDto, Apartment>, GenericService<Apartment, ApartmentDto>>();
+            services.AddScoped<IGenericService<UserDto, User>, GenericService<User, UserDto>>();
+            services.AddScoped<IGenericService<UserAppartmenDto, UserApartment>, GenericService<UserApartment, UserAppartmenDto >>();
+
 
             services.AddDbContext<MyDbContext>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();

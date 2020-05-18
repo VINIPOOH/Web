@@ -6,16 +6,17 @@ using API.model;
 using AutoMapper;
 using BLL.dto;
 using BLL.Intarfaces;
+using DAL.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
     public class ApartmensController : ControllerBase
     {
-        private readonly IGenericService<ApartmentDto> service;
+        private readonly IGenericService<ApartmentDto, Apartment> service;
         private readonly IMapper mapper;
 
-        public ApartmensController(IMapper mapper, IGenericService<ApartmentDto> service)
+        public ApartmensController(IMapper mapper, IGenericService<ApartmentDto, Apartment> service)
         {
             this.service = service;
             this.mapper = mapper;

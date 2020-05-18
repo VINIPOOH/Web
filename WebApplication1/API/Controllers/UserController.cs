@@ -6,16 +6,17 @@ using API.model;
 using AutoMapper;
 using BLL.dto;
 using BLL.Intarfaces;
+using DAL.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
     public class UserController : ControllerBase
     {
-        private readonly IGenericService<UserDto> service;
+        private readonly IGenericService<UserDto, User> service;
         private readonly IMapper mapper;
 
-        public UserController(IMapper mapper, IGenericService<UserDto> service)
+        public UserController(IMapper mapper, IGenericService<UserDto, User> service)
         {
             this.service = service;
             this.mapper = mapper;

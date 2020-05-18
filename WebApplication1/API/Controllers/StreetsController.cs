@@ -6,16 +6,17 @@ using API.model;
 using AutoMapper;
 using BLL.dto;
 using BLL.Intarfaces;
+using DAL.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
     public class StreetController : ControllerBase
     {
-        private readonly IGenericService<StreetDto> service;
+        private readonly IGenericService<StreetDto, Street> service;
         private readonly IMapper mapper;
 
-        public StreetController(IMapper mapper, IGenericService<StreetDto> service)
+        public StreetController(IMapper mapper, IGenericService<StreetDto, Street> service)
         {
             this.service = service;
             this.mapper = mapper;
