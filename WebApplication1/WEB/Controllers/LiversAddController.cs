@@ -51,10 +51,6 @@ namespace WEB.Controllers
             ApartmentDto appp = app.First();
             IEnumerable < UserAppartmenDto > result = serviceUserAps.findAllWithFilter(apartment => apartment.ApartmentId==model.FlatId );
 
-
-            int c = 3+2;
-            int b = result.Count();
-         
             if (appp.ApartmentSpace/(result.Count()+1)> minMetersOnLiver )
             {
                 UserAppartmenDto toSave = new UserAppartmenDto();
@@ -62,6 +58,7 @@ namespace WEB.Controllers
                 toSave.UserId = model.UserID;
                 serviceUserAps.Create(toSave);
                 toReturn = "saved";
+                ViewData["CityWhichUserLooking"] = toReturn;
                 return View();
             }
 

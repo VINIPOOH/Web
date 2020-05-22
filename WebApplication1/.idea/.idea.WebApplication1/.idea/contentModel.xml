@@ -122,7 +122,7 @@
           <e p="HouseModel.cs" t="Include" />
           <e p="LiversPageModel.cs" t="Include" />
           <e p="LoginViewModel.cs" t="Include" />
-          <e p="NewUserViewModel.cs" t="Include" />
+          <e p="RegistrationModel.cs" t="Include" />
           <e p="StreetModel.cs" t="Include" />
           <e p="UserModel.cs" t="Include" />
         </e>

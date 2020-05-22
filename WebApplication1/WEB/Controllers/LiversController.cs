@@ -57,13 +57,11 @@ namespace WEB.Controllers
                     return ActionResult(result, toReturn);
                 }
             }
-            if (model.BornDate!=null)
+
+            result= service.findAllWithFilter(user => user.BornDate==model.BornDate);
+            if (result.Any())
             {
-                result= service.findAllWithFilter(user => user.BornDate==model.BornDate);
-                if (result.Any())
-                {
-                    return ActionResult(result, toReturn);
-                }
+                return ActionResult(result, toReturn);
             }
 
             return ActionResult(result, toReturn);
